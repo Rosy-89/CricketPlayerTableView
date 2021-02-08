@@ -14,6 +14,9 @@
 		E12B9C6025D092BC00EE69C4 /* CricketPlayerTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E12B9C5E25D092BC00EE69C4 /* CricketPlayerTableView.xcdatamodeld */; };
 		E12B9C6225D092BD00EE69C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12B9C6125D092BD00EE69C4 /* Assets.xcassets */; };
 		E12B9C6525D092BD00EE69C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12B9C6325D092BD00EE69C4 /* LaunchScreen.storyboard */; };
+		E12B9C6E25D0990A00EE69C4 /* CricketPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9C6D25D0990A00EE69C4 /* CricketPlayer.swift */; };
+		E12B9C7125D099BB00EE69C4 /* CricketTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9C7025D099BB00EE69C4 /* CricketTeam.swift */; };
+		E12B9C7825D0AC7000EE69C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12B9C7725D0AC7000EE69C4 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		E12B9C6125D092BD00EE69C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E12B9C6425D092BD00EE69C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E12B9C6625D092BD00EE69C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12B9C6D25D0990A00EE69C4 /* CricketPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketPlayer.swift; sourceTree = "<group>"; };
+		E12B9C7025D099BB00EE69C4 /* CricketTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketTeam.swift; sourceTree = "<group>"; };
+		E12B9C7725D0AC7000EE69C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		E12B9C5425D092BC00EE69C4 /* CricketPlayerTableView */ = {
 			isa = PBXGroup;
 			children = (
-				E12B9C5525D092BC00EE69C4 /* AppDelegate.swift */,
-				E12B9C5725D092BC00EE69C4 /* SceneDelegate.swift */,
-				E12B9C5925D092BC00EE69C4 /* ViewController.swift */,
-				E12B9C5B25D092BC00EE69C4 /* Main.storyboard */,
+				E12B9C7E25D0B73A00EE69C4 /* Delegates */,
+				E12B9C7A25D0B70200EE69C4 /* Models */,
+				E12B9C7D25D0B72500EE69C4 /* View */,
+				E12B9C7C25D0B70F00EE69C4 /* Controllers */,
 				E12B9C6125D092BD00EE69C4 /* Assets.xcassets */,
-				E12B9C6325D092BD00EE69C4 /* LaunchScreen.storyboard */,
 				E12B9C6625D092BD00EE69C4 /* Info.plist */,
 				E12B9C5E25D092BC00EE69C4 /* CricketPlayerTableView.xcdatamodeld */,
 			);
 			path = CricketPlayerTableView;
+			sourceTree = "<group>";
+		};
+		E12B9C7A25D0B70200EE69C4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9C6D25D0990A00EE69C4 /* CricketPlayer.swift */,
+				E12B9C7025D099BB00EE69C4 /* CricketTeam.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E12B9C7C25D0B70F00EE69C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9C5925D092BC00EE69C4 /* ViewController.swift */,
+				E12B9C7725D0AC7000EE69C4 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E12B9C7D25D0B72500EE69C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9C5B25D092BC00EE69C4 /* Main.storyboard */,
+				E12B9C6325D092BD00EE69C4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E12B9C7E25D0B73A00EE69C4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E12B9C5525D092BC00EE69C4 /* AppDelegate.swift */,
+				E12B9C5725D092BC00EE69C4 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12B9C6025D092BC00EE69C4 /* CricketPlayerTableView.xcdatamodeld in Sources */,
+				E12B9C6E25D0990A00EE69C4 /* CricketPlayer.swift in Sources */,
+				E12B9C7125D099BB00EE69C4 /* CricketTeam.swift in Sources */,
 				E12B9C5A25D092BC00EE69C4 /* ViewController.swift in Sources */,
+				E12B9C7825D0AC7000EE69C4 /* SecondViewController.swift in Sources */,
 				E12B9C5625D092BC00EE69C4 /* AppDelegate.swift in Sources */,
 				E12B9C5825D092BC00EE69C4 /* SceneDelegate.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CricketPlayerTableView
 //
-//  Created by Alok Kumar Naik on 07/02/2021.
+//  Created by Rojirani Patel on 07/02/2021.
 //
 
 import UIKit
